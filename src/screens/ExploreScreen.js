@@ -45,7 +45,7 @@ const ExploreScreen = () => {
   // const [trendingData, setTrendingData] = useState([]);
   fetchTrending = async () => {
     await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=trending&type=video&key=AIzaSyDem4S2xQ9rE7ShniISRObblOnhAuBjAcc`,
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=trending&type=video&key=<YOUR API KEY>`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -54,7 +54,7 @@ const ExploreScreen = () => {
   };
   fetchGaming = async () => {
     await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=gaming&type=video&key=AIzaSyDem4S2xQ9rE7ShniISRObblOnhAuBjAcc`,
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=gaming&type=video&key=<YOUR API KEY>`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -63,7 +63,7 @@ const ExploreScreen = () => {
   };
   fetchNews = async () => {
     await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=news&type=video&key=AIzaSyDem4S2xQ9rE7ShniISRObblOnhAuBjAcc`,
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=news&type=video&key=<YOUR API KEY>`,
     )
       .then((res) => res.json())
       .then((data) => {
